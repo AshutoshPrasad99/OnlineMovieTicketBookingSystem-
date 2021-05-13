@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BookMyShow</title>
+<style>
+*{
+margin: 0%;
+padding: 0px;
+font-size: 20px;
+/* border: 1px solid red; */
+}
+a{
+  text-decoration: none;
+  opacity: 0.75;
+  color: #fff;
+}
+a:hover{
+  opacity: 1;
+  font-weight: bold;
+}
+body{
+margin: 0%;
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+background-image: url(image/welcome.jpeg);
+background-size: cover;
+z-index: -1;
+overflow:hidden;
+}
+#nav{
+height:6%;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.link{
+width: 30vw;
+padding-top:20px;
+padding-right:10px;
+display: flex;
+justify-content: space-evenly;
+color: #fff;
+font-family: "Quicksand", sans-serif;
+animation: 1s fadein 0.5s forwards;
+opacity: 0;
+}
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+.main{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.H1{
+font: bold 60px "Open Sans", sans-serif;
+margin-bottom: 15px;
+}
+.H3{
+font: normal 25px "Open Sans", sans-serif;
+padding-left:20px;
+margin-bottom: 45px;
+}
+.logo {
+padding-top:25vh;
+padding-left:37vw;
+opacity: 0;
+color: #fff;
+margin-top: 100px;
+font-family: "Quicksand", sans-serif;
+animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div id="nav">
+	<div class="link">
+		<a href="login.jsp">Login</a>
+		<a href="signup.jsp">Sign Up</a>
+		<a href="#">About Us</a>
+	</div>
+</div>
+<div id="main">
+	<div class=logo>
+		<div class=H1>BookMyShow</div>
+		<div class=H3>- Entertainment For Everyone -</div>
+	</div>
+</div>
+</body>
+</html>
